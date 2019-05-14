@@ -1,0 +1,24 @@
+Parameters_USRP.txt	for project_usrp.cpp <<FILE TRANSMISSION MODE BY DEFAULT>>
+
+
+|*****************************************************************************|*****************************|**********************************|
+|**************************[PARAMETERS]***************************************|********[VALUE]**************|********[DEFAULT_VALUE]***********|
+|*****************************************************************************|*****************************|**********************************|
+[0]Sample_type(e.g:short,float,double)	 						double				double						
+[1]samples_per_buffer 									1000				10000							
+[2]sample_rate	 	 								20e6		 		500000									
+[3]center_frequency_in_HZ	 							915e6				100000000							
+[4]Gain 										70				9								
+[5]Directory 				        					../TxTest			../Data_Files							
+[6]bandwidth 				        					40e6				40000000					
+[7]Transmit_N_times									100000				1								
+[8]Transmit_only_file									complex_s_1M_B.dat 	-     
+[9]Save_samples_in_CSV_file(ON/OFF)							OFF				OFF
+|********************************************************[VECTOR TRANSMISSION MODE]*************************************************************|
+[11]MODE<VECTOR_TRANSMISSION>(ON/OFF)							OFF				OFF
+[12]Repeat_transmission_until_ctr+c(ON/OFF)						ON				OFF
+[13]SUBMODE:ITERATION(ON/OFF)								ON				OFF	
+[14]Iterative_Window(>100)								100				100	
+*[15]2^X_(random_vector)								11				10
+*[16]NormVector*sqrt(POWER[dBm])							50	 			40
+*[17]Transmit_[16]									OFF				OFF
